@@ -29,5 +29,9 @@ bin/
 ### Mac OS ###
 .DS_Store
 
-### Otro ###
+### PyCharm ###
 .idea/
+.idea_modules/
+*.iml
+*.iws
+*.ipr
