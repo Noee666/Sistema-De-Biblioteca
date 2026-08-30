@@ -1,4 +1,4 @@
-\# Sistema de Biblioteca
+# Sistema de Biblioteca
 
 
 
@@ -6,31 +6,21 @@ Sistema de gestión para una red de bibliotecas diseñado con Programación Orie
 
 
 
-\## Arquitectura del Proyecto
+## Arquitectura del Proyecto
 
 
 
-\\`\\`\\`text
-
+\`\`\`text
 Sistema-De-Biblioteca/
-
 ├── .gitignore               # Archivos y carpetas excluidos.
-
 ├── README.md                # Documentación principal del proyecto.
-
 ├── database/                
-
-│   └── 01\_schema.sqlite     # Archivo binario de la base de datos SQLite con las tablas ya creadas.
-
+│   └── 01_schema.sqlite     # Archivo binario de la base de datos SQLite con las tablas ya creadas.
 └── src/                     
-
-&#x20;   └── model/               # Clases que representan las entidades.
-
-&#x20;       ├── Libro.py         # Constructor y métodos de conexión a SQL para los libros.
-
-&#x20;       └── main.py          # Punto de entrada principal para testear la conexión y ejecución.
-
-\\`\\`\\`
+    └── model/               # Clases que representan las entidades.
+        ├── Libro.py         # Constructor y métodos de conexión a SQL para los libros.
+        └── main.py          # Punto de entrada principal para testear la conexión y ejecución.
+\`\`\`
 
 
 
