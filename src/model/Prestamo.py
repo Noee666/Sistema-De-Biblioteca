@@ -35,8 +35,11 @@ class Prestamo:
         """
         cursor = conexion.cursor()
         query = """
-            INSERT INTO Prestamo (id_socio, id_ejemplar, fecha_prestamo, fecha_esperada_dev, fecha_real_dev) VALUES (?, ?, ?, ?, ?)
-            """
+                INSERT INTO Prestamo 
+                (id_socio, id_ejemplar, fecha_prestamo,
+                fecha_esperada_dev, fecha_real_dev) 
+                VALUES (?, ?, ?, ?, ?)
+                """
         cursor.execute(
             query,(
                 self.id_socio,

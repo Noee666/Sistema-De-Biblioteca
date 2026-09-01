@@ -26,9 +26,7 @@ class Sucursal:
         self.horario = horario
 
     def guardar_en_bd(self, conexion: sqlite3.Connection) -> None:
-        """Inserta la sucursal en la base de datos y asigna el id_sucursal
-
-        generado.
+        """Inserta la sucursal en la base de datos y asigna el id_sucursal generado.
 
         Args:
             conexion (sqlite3.Connection): Conexión activa a la base de datos
@@ -39,9 +37,9 @@ class Sucursal:
         """
         cursor = conexion.cursor()
         query = """
-            INSERT INTO Sucursal (nombre, direccion, horario)
-            VALUES (?, ?, ?)
-        """
+                INSERT INTO Sucursal (nombre, direccion, horario)
+                VALUES (?, ?, ?)
+                """
         cursor.execute(query, (self.nombre, self.direccion, self.horario))
         conexion.commit()
         self.id_sucursal = cursor.lastrowid

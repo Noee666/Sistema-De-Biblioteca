@@ -28,9 +28,7 @@ class Ejemplar:
         self.estado = estado
 
     def guardar_en_bd(self, conexion: sqlite3.Connection) -> None:
-        """Inserta el ejemplar en la base de datos y asigna su id_ejemplar
-
-        autoincremental.
+        """Inserta el ejemplar en la base de datos y asigna su id_ejemplar autoincremental.
 
         Args:
             conexion (sqlite3.Connection): Conexión activa a la base de datos
