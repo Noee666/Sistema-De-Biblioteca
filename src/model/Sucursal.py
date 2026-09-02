@@ -7,8 +7,8 @@ class Sucursal:
     def __init__(
         self,
         nombre: str,
-        direccion: Optional[str] = None,
-        horario: Optional[str] = None,
+        direccion: str,
+        horario: str,
         id_sucursal: Optional[int] = None,
     ):
         """Inicializa una nueva sucursal.

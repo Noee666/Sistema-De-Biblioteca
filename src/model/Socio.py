@@ -1,8 +1,10 @@
 import sqlite3
+from typing import Optional
+
 
 class Socio:
 
-    def __init__(self, nombre:str, id_sucursal_base:int, activo:bool = True):
+    def __init__(self, nombre:str, id_sucursal_base: Optional[int] = None, activo:bool = True):
         self.nombre = nombre
         self.id_sucursal_base = id_sucursal_base
         self.activo = activo
